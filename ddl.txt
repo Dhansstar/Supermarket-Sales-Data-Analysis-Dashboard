@@ -1,0 +1,21 @@
+-- P2M3_Risyadhana_ddl.txt
+CREATE TABLE table_m3 (
+    "Invoice ID" VARCHAR(20),
+    "Branch" CHAR(1),
+    "City" VARCHAR(50),
+    "Customer type" VARCHAR(50),
+    "Gender" VARCHAR(20),
+    "Product line" VARCHAR(100),
+    "Unit price" FLOAT,
+    "Quantity" INT,
+    "Tax 5%" FLOAT,
+    "Total" FLOAT,
+    "Date" DATE,
+    "Time" TIME,
+    "Payment" VARCHAR(50),
+    "COGS" FLOAT,
+    "Gross margin percentage" FLOAT,
+    "Gross income" FLOAT,
+    "Rating" FLOAT
+);
+

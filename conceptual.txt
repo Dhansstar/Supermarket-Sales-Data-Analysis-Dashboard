@@ -1,0 +1,27 @@
+=================================================
+Milestone 3 - Conceptual Problems
+Nama  : Risyadhana Syaifuddin
+Batch : HCK-036
+=================================================
+
+1. Apa yang dimaksud dengan NoSQL?
+NoSQL (Not Only SQL) merupakan jenis database yang tidak menggunakan skema kaku seperti tabel relasional (baris dan kolom). NoSQL didesain untuk menyimpan data yang tidak terstruktur atau semi-terstruktur (seperti JSON, dokumen, atau key-value) dan memiliki kemampuan skalabilitas horizontal yang sangat baik untuk menangani data besar.
+
+2. Kapan harus menggunakan NoSQL dan Relational Database (RDBMS)?
+- Gunakan RDBMS (SQL) jika data memiliki skema yang tetap, membutuhkan konsistensi transaksi yang sangat ketat (ACID), dan memiliki hubungan antar tabel yang kompleks.
+- Gunakan NoSQL jika skema data sering berubah-ubah (dinamis), membutuhkan performa tinggi untuk operasi baca/tulis yang cepat, dan volume data sangat besar sehingga butuh distribusi server (scaling).
+
+3. Contoh 2 tools NoSQL selain ElasticSearch dan keunggulannya:
+- MongoDB: Keunggulannya adalah penyimpanan berbasis dokumen (BSON) yang sangat fleksibel dan mudah dipelajari oleh developer karena strukturnya mirip JSON.
+- Redis: Keunggulannya adalah database in-memory yang sangat cepat, biasanya digunakan untuk caching dan real-time analytics karena latensinya yang sangat rendah.
+
+4. Apa itu Airflow?
+Airflow adalah platform open-source untuk mengatur, menjadwalkan, dan memantau alur kerja (workflow) atau pipeline data secara otomatis. Airflow menggunakan konsep DAG (Directed Acyclic Graph) yang ditulis dalam kode Python untuk mendefinisikan urutan tugas (tasks).
+
+5. Apa itu Great Expectations (GX)?
+Great Expectations adalah library Python yang digunakan untuk melakukan validasi, dokumentasi, dan profil data. GX membantu memastikan bahwa data yang masuk ke pipeline sesuai dengan kriteria atau "harapan" (expectations) yang kita tentukan, sehingga kualitas data tetap terjaga.
+
+6. Apa itu Batch Processing?
+Batch Processing adalah metode pemrosesan data di mana sekumpulan data (batch) dikumpulkan dalam periode waktu tertentu, kemudian diproses secara bersamaan (sekaligus) pada waktu terjadwal (misal: setiap jam 12 malam).
+- Contoh Kasus: Pemrosesan gaji bulanan karyawan atau laporan penjualan harian.
+- Tools: Apache Spark, AWS Glue, atau prosedur SQL terjadwal.
